@@ -1,0 +1,122 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    min-height: 0;
+    min-width: 0;
+}
+h1,ul,p{
+    margin-block-start : 0;
+    margin-block-end: 0;
+}
+p{
+    font-size: 1em;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(77, 212, 253);
+    color: white;
+    height: 90px;
+}
+
+header h1 {
+    font-size: 45px;
+    padding: 10px 20px;
+    float: left;
+}
+
+.menu a {
+    padding: 0 10px;
+    display: block;
+    transition: all 0.5s;
+}
+
+.menu li {
+    list-style: none;
+    float: left;
+    font-size: 1em;
+    padding: 2em 1em;
+    color: #000;
+}
+
+.menu li:hover {
+    background-color: rgb(131, 213, 228);
+}
+@media(max-width: 500px){
+    .menu li{
+        display: none;
+    }
+}
+/*main*/
+
+/*slider setting*/
+.slider {
+    margin: 0px auto;
+    width: 50%;
+    padding: 0;
+    z-index: 1;
+}
+.slider img {
+    height: auto;
+    width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+    color: #000;
+}
+.sl1{
+    position: relative;
+}
+.sl1_content_wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+.sl1_content {
+    display: block;
+    opacity: 0;
+    transform: translate(-50%, 20%);
+    transition: 0s;
+}
+.sl1_content.on {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+.sl1 p {
+    position: absolute;
+    z-index: 2;
+    /*親要素に対して配置を決める*/
+    background-color: rgb(171, 252, 90);
+    /*黄緑バックに白文字*/
+    color: rgb(255, 255, 255);
+    width: 60%;
+    height: 30%;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    /*左上に画像を配置*/
+}
+
+/*slider setting*/
+
+/*slider fin*/
+
+
+footer {
+    text-align: center;
+    background-color: rgb(75, 76, 77);
+    color: antiquewhite;
+    height: 5em;
+}
+
+.explain {
+    height: 50px;
+    background-color: rgb(156, 248, 248);
+}
+
+.ex {
+    color: rgb(51, 51, 51);
+}
