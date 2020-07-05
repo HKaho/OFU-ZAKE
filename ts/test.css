@@ -1,0 +1,55 @@
+
+/*slider setting*/
+.slider {
+    margin: 100px auto;
+    width: 50%;
+    padding: 0 50px;
+    z-index: 1;
+}
+.slider img {
+    height: auto;
+    width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+    color: #000;
+}
+.sl1{
+    position: relative;
+}
+.sl1_content_wrap {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+.sl1_content {
+    display: block;
+    opacity: 0;
+    transform: translate(-50%, 20%);
+    transition: 0s;
+}
+.sl1_content.on {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+.sl1 p {
+    position: absolute;
+    z-index: 2;
+    /*親要素に対して配置を決める*/
+    background-color: rgb(171, 252, 90);
+    /*黄緑バックに白文字*/
+    color: rgb(255, 255, 255);
+    width: 60%;
+    height: 30%;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    /*左上に画像を配置*/
+}
+
+/*slider setting*/
+.sl_title {
+    font-size: 48px;
+    color: #000;
+}
+/*slider fin*/
